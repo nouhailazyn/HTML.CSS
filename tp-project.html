@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp-project.html</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+              /* Header */
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            background-color: rgb(49, 208, 155); 
+            color: white;
+        }
+        /*Navigation Bar*/
+        .navbar {
+            background-color: black;
+            padding: 15px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            padding-left: 40px;
+        }
+        /*The flexible grid (content) */
+        .row{
+            display: flex;
+
+        }
+        .row .fakeimg{
+            background-color: gray;
+
+        }
+        .side{
+            background-color: rgb(218, 215, 215);
+            width: 35rem;
+            padding: 0 10px;
+        }
+        .side .fakeimg{
+            padding-right: 20px;
+            
+        }
+        .main {
+            padding: 0 20px;
+        }
+        /*Footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(202, 195, 195);
+        }
+        @media screen and (max-width:300px){
+            .row{ 
+              display: block;
+            }
+            .side{
+              width: auto;
+            }
+        }
+
+        @media screen and (max-width: 550px){
+          .navbar {
+            white-space: nowrap;
+            overflow: auto;
+            scrollbar-width: none;
+        }
+        }
+
+    </style>
+</head>
+<body>
+      
+      <!-- Header -->
+      <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+      </div>
+      
+      
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="#">FGN-news</a>
+        <a href="#">Home</a>
+        <a href="#">Collections</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact us</a>
+      </div>
+      
+      <!-- The flexible grid (content) -->
+      <div class="row">
+        <div class="side">
+          <h2>About Me</h2>
+          <h5>Photo of me:</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <h3>More Text</h3>
+          <p>Lorem ipsum dolor sit ame.</p>
+          <div class="fakeimg" style="height:60px;">Image</div><br>
+          <div class="fakeimg" style="height:60px;">Image</div><br>
+          <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <br>
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      
+</body>
+</html>

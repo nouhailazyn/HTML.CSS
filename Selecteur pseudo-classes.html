@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecteur pseudo-classes</title>
+
+    <style>
+        /*exercice 1*/
+
+a:visited{
+    color: #fcb941;
+}
+a:hover{
+    text-decoration: none;
+    background-color: #7e3661;
+    color: white;
+}
+a:active{
+    font-size: 1.5em;
+}
+
+
+        /* exercice 2*/
+caption{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+        table{
+    /*1-taille et capitale*/
+   
+    /*2-bordure*/
+    border: none;
+}
+th, td{
+    /*3-marge interne et alignement centré*/
+    padding: 10px;
+    text-align: center;
+}
+/*4-taille et color*/
+tr:first-child th:nth-child(2){
+    font-size: 2em;
+    color: blue;
+}
+/*5éme question*/
+/* tache background orange*/
+tbody tr:nth-child(2n){
+    background-color: #FCB941;
+}
+
+/* tache background red*/
+tbody tr:nth-child(2n+1){
+    background-color: #f16541;
+}
+/*6éme question*/
+tr:nth-child(2n+1) td:first-child {
+    background-color: #7E3661;
+    color: #fff;
+}
+/*7éme question*/
+tr:nth-child(2n) td:first-child {
+    background-color: #888888;
+    color: #fff;
+}
+/*8éme question*/
+tr:nth-child(2n+1) td:last-child{
+    background-color: #8870FF;
+    color: #fff;
+}
+/*la dernier question*/
+th[rowspan]:last-child{
+    border-right: none;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+    <h1>TP4 : Les sélecteurs pseudo-classes </h1>
+
+
+    <!--exercice 1-->
+    <h3>exercice1 </h3>
+        <a href=”https://www.google.com”>Google</a> 
+        <a href="https://www.facebook.com" >Facebook</a> 
+
+
+        <!--exercice 1-->
+        <h3>Exercice2</h3>
+<table border="1" celpadding="0" cellspacing="0">
+    <caption>Planning des tâches par équipe (Janvier)</caption>
+    <thead>
+    <tr>
+        <th rowspan="2">Équipes</th>
+        <th colspan="6">Janvier</th>
+        <th rowspan="2"></th>
+    </tr>
+    <tr>
+        <th>Lundi</th>
+        <th>Mardi</th>
+        <th colspan="2">Mercredi</th>
+        <th>Jeudi</th>
+        <th >Vendredi</th>
+
+    </tr>
+</thead>
+    <!--semaine1-->
+    <tbody>
+    <tr>
+        <td >Équipe 1</td>
+        <td colspan="4">Tâche 1</td>
+        <td colspan="2">Tâche 2</td>
+        <td rowspan="2">Semaine 1</td>
+    </tr>
+    <tr>
+        <td >Équipe 2</td>
+        <td colspan="3">Tâche 1</td>
+        <td colspan="3">Tâche 2</td>
+    </tr>
+    <!--semaine2-->
+    <tr>
+        <td >Équipe 1</td>
+        <td colspan="1" >Tâche 3</td>
+        <td colspan="4">Tâche 4</td>
+        <td colspan="1">Taches 5</td>
+        <td rowspan="2">Semaine 2</td>
+    </tr>
+    <tr>
+        <td >Équipe 2</td>
+        <td colspan="2">Tâche 3</td>
+        <td colspan="4">Tâche 4</td>
+    </tr>
+    <!--semaine3-->
+    <tr>
+        <td >Équipe 1</td>
+        <td colspan="3" >Tâche 5</td>
+        <td colspan="3">Tâche 6</td>
+        <td rowspan="2">Semaine 3</td>
+    </tr>
+    <tr>
+        <td >Équipe 2</td>
+        <td colspan="1">Tâche 5</td>
+        <td colspan="5">Tâche 6</td>
+    </tr>
+    <!--semaine4-->
+    <tr>
+        <td >Équipe 1</td>
+        <td colspan="4" >Tâche 7</td>
+        <td colspan="2">Tâche 8</td>
+        <td rowspan="2">Semaine 4</td>
+    </tr>
+    <tr>
+        <td> Équipe 2 </td>
+        <td colspan="3">Tâche 7</td>
+        <td colspan="3">Tâche 8</td>
+    </tr>
+</tbody>
+    </table>
+</body>
+</html>
+

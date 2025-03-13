@@ -1,0 +1,13 @@
+.article p{
+    padding-left: 20px;
+    font-size: 14                   px;
+}
+h2+p{
+    background-color: yellow;
+}
+h2~p{
+    border: 5px solid black ;
+}
+li p{
+    color: green;
+} 

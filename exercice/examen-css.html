@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controle CSS</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+        .navbar div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar p{
+            padding-right: 10px;
+        }
+        .items-cours{
+            text-align: center;
+            margin: 50px;
+        }
+        .cours{
+            margin: 100px;
+        }
+        .cours p{
+            margin: 30px;
+        }
+        .cours a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            height: 150px;
+            margin: 20px;
+            padding: 15px;
+        }
+        .card p{
+            margin: 20px;
+        }
+        .card a{
+            color: white;
+            background-color: black;
+            text-decoration:none;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        footer{
+            color: white;
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <div>
+                <p>E-Learn</p>
+            </div>
+            <div class="navbar2">
+                <p>Accueil</p>
+                <p>Cours</p>
+                <p>à propos</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </header>
+    <div class="items-cours">
+        <div class="cours">
+            <h1>Appprenez à votre rythme</h1>
+            <p>Des cours en ligne pour tous les niveaux et tous les documents</p>
+            <a href="les-cours.html">Voir les cours</a>
+        </div>
+
+        <div class="cours-p">
+            <h3>Nos Cours Populaires</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>HTML & CSS</h4>
+                    <p>Apprenez les bases du développement</p>
+                    <a href="html-css.html">en savoir plus</a>
+                </div>
+                
+                <div class="card">
+                    <h4>Javascript</h4>
+                    <p>Apprenez les bases du développement</p>
+                    <a href="java-cours.html">en savoir plus</a>
+                </div>
+                
+                <div class="card">
+                    <h4>Python</h4>
+                    <p>Apprenez les bases du développement</p>
+                    <a href="python-cours.html">en savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy;2024 E-learn . Tous droits réservés</p>
+    </footer>
+</body>
+</html>
